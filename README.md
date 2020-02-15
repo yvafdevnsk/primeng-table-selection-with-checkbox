@@ -1,27 +1,96 @@
-# PrimengTableSelectionWithCheckbox
+# PrimeNG Table row selection with Checkbox component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+Simultaneously select rows and check boxes in the PrimeNG Table.  
+  
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.  
+  
+PrimeNG version 8.1.1.  
+PrimeIcons version 2.0.0.  
+Angular CDK version 8.2.3.  
 
-## Development server
+# Eclipse EGit settings
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Commit Local Repository
 
-## Code scaffolding
+    Window -> Perspective -> Open Perspective -> Other  
+      Git  
+  
+    Git Repositories  
+      Add an existing local Git Repository to this view  
+        Add Git Repositories Dialog  
+          Search criteria  
+            Directory: /home/mizuki/workspace/angular/primeng-table-selection-with-checkbox  
+          Search results  
+            [x]/home/mizuki/workspace/angular/primeng-table-selection-with-checkbox/.git  
+  
+    primeng-table-selection-with-checkbox  
+      Git Staging  
+        Commit  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Create Remote Repository
 
-## Build
+    github.com/yvafdevnsk  
+      Repositories  
+        New  
+          Repository name: primeng-table-selection-with-checkbox  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Pushing to Remote Repository ([Push Ref Specifications](https://wiki.eclipse.org/EGit/User_Guide#Push_Ref_Specifications))
 
-## Running unit tests
+    primeng-table-selection-with-checkbox  
+      Remotes  
+        Create Remote...  
+          New Remote Dialog  
+            Remote name: origin  
+            [x]Configure push  
+          Configure Push Dialog  
+            Change...  
+              Host: github.com  
+              Repository path: /yvafdevnsk/primeng-table-selection-with-checkbox  
+              Protocol: https  
+              Port: (empty)  
+            Advanced...  
+              Add create/update specification  
+                Source ref: refs/heads/*  
+                Destination ref: refs/heads/*  
+              Add Spec  
+            Finish  
+          Save and Push  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Fetching from Remote Repository ([Fetch Ref Specifications](https://wiki.eclipse.org/EGit/User_Guide#Fetch_Ref_Specifications))
 
-## Running end-to-end tests
+    primeng-table-selection-with-checkbox  
+      Remotes  
+        origin  
+          fetch  
+            Configure Fetch...  
+              Advanced...  
+                Add create/update specification  
+                  Source Ref: refs/heads/*  
+                  Destination Ref: refs/remotes/origin/*  
+                Add Spec  
+              Finish  
+            Save and Fetch  
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Git user settings
 
-## Further help
+Your Identity ([1.6 Getting Started - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup))  
+  
+    $ git config --global user.name "mizuki"  
+    $ git config --global user.email mizuki@localhost  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Clone a Git repository and run application
+
+## Clone a Git repository
+
+Host: github.com  
+Repository path: /yvafdevnsk/primeng-table-selection-with-checkbox  
+Protocol: https  
+  
+Destination: /home/mizuki/workspace/github/primeng-table-selection-with-checkbox-clone  
+
+## Run application
+
+    $ pwd  
+    /home/mizuki/workspace/github/primeng-table-selection-with-checkbox-clone  
+    $ npm install  
+    $ npx ng serve --open  
